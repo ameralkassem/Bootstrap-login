@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./script.js"></script>
   <title>Login with Amer</title>
 </head>
 <body class="bg-success">
@@ -14,8 +16,6 @@
       <div class="col-md-6 bg-light p-4 rounded">
 
         <h2 class="text-center mb-4">Login</h2>
-
-        <form action="login.php" method="post">
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
             <input type="email" class="form-control" placeholder="Enter your email"  name="email">
@@ -26,9 +26,7 @@
             <input type="password" class="form-control" placeholder="Enter your password" name="password" >
           </div>
           
-          <button type="submit" class="btn btn-success btn-block">Sign in</button>
-        </form>
-
+          <button type="submit" class="btn btn-success btn-block" onclick="backend.login()">Sign in</button>
       </div>
     </div>
 
